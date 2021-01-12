@@ -1,0 +1,18 @@
+﻿<Window x:Class="PomodoroTimer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PomodoroTimer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="850" ResizeMode="CanMinimize" >
+    <Grid>
+        <Button x:Name="StartBtn" Content="Pomodoro start" HorizontalAlignment="Left" Height="86" Margin="10,10,0,0" VerticalAlignment="Top" Width="412" FontFamily="Siemens TIA Portal Basic" FontSize="36" Background="#FF58D105" Click="StartBtn_Click"/>
+        <Label x:Name="MainTextBox" Content="" HorizontalAlignment="Left" Height="308" Margin="10,101,0,0" VerticalAlignment="Top" Width="822" FontSize="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="PTimeTextBox" HorizontalAlignment="Left" Height="38" Margin="427,58,0,0" TextWrapping="Wrap" Text="25" VerticalAlignment="Top" Width="200" FontFamily="Siemens Sans SC" FontSize="24" TextChanged="PTimeTextBox_TextChanged"/>
+        <TextBox x:Name="BreakTimeTextBox" HorizontalAlignment="Left" Height="38" Margin="632,58,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="200" FontFamily="Siemens Sans SC" FontSize="24" TextChanged="BreakTimeTextBox_TextChanged"/>
+        <Label Content="Pomodoro time" HorizontalAlignment="Left" Height="43" Margin="427,10,0,0" VerticalAlignment="Top" Width="200" FontFamily="Siemens Sans SC Black" FontSize="24"/>
+        <Label Content="Break time" HorizontalAlignment="Left" Height="43" Margin="632,10,0,0" VerticalAlignment="Top" Width="200" FontSize="24" FontFamily="Siemens Sans SC Black"/>
+
+    </Grid>
+</Window>
